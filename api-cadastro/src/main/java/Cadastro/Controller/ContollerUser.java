@@ -19,7 +19,6 @@ import lombok.RequiredArgsConstructor;
 public class ContollerUser {
 	 private final UserService userService;
 	 
-	//localhost:8080/register/user
 	@PostMapping("/user")
 	public ResponseEntity<CadastroModel> create(@RequestBody @Valid userDTO users) throws Exception{
 		return new ResponseEntity<>(userService.create(users), HttpStatus.CREATED);	

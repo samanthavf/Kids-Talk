@@ -47,7 +47,7 @@ function validarSenha(){
 }
 	
 document.getElementById('voltar').addEventListener("click" , function(){
-	window.location.href="http://localhost:8080/registers"
+	window.location.href="http://localhost:8080/index"
 })
 	
 	
