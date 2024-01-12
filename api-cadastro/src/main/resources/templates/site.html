@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="ISO-8859-1">
+<title>TwC</title>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<link rel="icon" href="public/images/TalkwCards/aba.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="public/styles/TalkwCards.css">
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script defer="defer" type="text/javascript" src="public/scripts/TalkwCards.js"></script>
+</head>
+<body>
+
+<div class="background">
+
+<div class="container">
+
+
+<div id="logo" >
+<img alt="logo" id="imagem" src="public/images/TalkwCards/TALKcards.png" >
+</div>
+
+<div>
+<a id="git" href="https://github.com/samanthavf" class="links">GitHub</a>
+<img alt="icongit" src="public/images/GG/git.png" id="giticon">
+<p id="email" class="links" >samanthavf150@gmail.com</p>
+<img alt="icongit" src="public/images/GG/gmail.png" id="gmicon">
+</div>
+
+
+<nav class="nav">
+
+ <input type="checkbox" id="menu-toggle" class="hidden">
+    <label for="menu-toggle" class="nav">
+    <img alt="" class="menu-icon" id="icon" src="public/images/TalkwCards/titulo.png">
+    <a id="menutexto">MENU</a>
+    </label>
+
+<ul class="nav-list">
+
+<li onclick="iniciarEstadoInicial()"><a href="#emotions" id="emot" onclick="emotions()" class="menu">EMOTIONS</a>
+<img id="emotions" class="icones" alt="" src="public/images/icons/emotions.png" width="38" height="38">
+</li>
+
+
+<li onclick="iniciarEstadoInicial()"><a href="#games" onclick="games()" >GAMES</a>
+<img id="game" class="icones" alt="" src="public/images/icons/games.png" width="38" height="38">
+</li>
+
+<li onclick="iniciarEstadoInicial()"><a href="#cards"  onclick="fet()" > CARDS</a>
+<img id="camera" class="icones" alt="" src="public/images/icons/camera.png" width="38" height="38">
+</li>
+</ul>
+
+</nav>
+
+</div>
+
+
+
+<div class="bgimage">
+
+<img alt="talk" src="public/images/behind/talk.gif" id="back">
+
+<div class="sobre">
+<input type="checkbox" id="toggleCard" class="hidden">
+ <label for="toggleCard" class="menu-sobre">About</label>
+<div class="card">
+<div>
+<iframe id="video" width="566" height="566" src="https://www.youtube.com/embed/kDSbvGb05Jg?si=7LG3n_x-JrckJEFb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+ </div>
+
+</div>
+
+</div>
+
+<div class="cloud"></div>
+<div class="cloud" id="c1"></div>
+<div class="cloud" id="c2"></div>
+<div class="cloud" id="c3"></div>
+<div class="cloud" id="c4"></div>
+<div class="cloud" id="c5"></div>
+<div class="cloud" id="c6"></div>
+<div class="cloud" id="c7"></div>
+
+
+<div class="swiper" onclick="fat()">
+  <div class="swiper-wrapper" id="cards-container">
+    <div class="swiper-slide modelo">
+     <div class="formulario">
+        <img class="cI" alt="" src="public/images/icons/pato.png" />
+        <p class="cN">Duck</p>
+      </div>
+    </div>    
+  </div>  
+    <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+
+
+<div class="emotionV" onclick="emotions()">
+<iframe class="v" width="560" height="315" src="https://www.youtube.com/embed/bP4_XoPFOZA?si=wqDm6Nr0rAglboBL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="v" width="560" height="315" src="https://www.youtube.com/embed/ReP9CjQW3P4?si=V4KRWW4es24J2qRO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="v" width="560" height="315" src="https://www.youtube.com/embed/dpjxJx_vAUo?si=meVD-wxGQgE511o9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="v" width="560" height="315" src="https://www.youtube.com/embed/fYe6l7rDx8U?si=hs1kW7EYTUTQ04nn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="v" width="560" height="315" src="https://www.youtube.com/embed/yTqPkiltyyo?si=_YZDJWwFA-n4SqUZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe class="v" width="560" height="315" src="https://www.youtube.com/embed/ymrvDRofDkY?si=1xUUqcsmLMLYD1Aa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+<div class="game" onclick="games()">
+<iframe id="fun" src="https://www.funbrain.com/pre-k-and-k-playground" width="1100" height="600" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+</div>
+
+</body>
+</html>

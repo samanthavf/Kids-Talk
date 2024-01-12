@@ -1,0 +1,544 @@
+@charset "ISO-8859-1";
+
+body {
+    background-color: #ffffff;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.background{
+	width:196vh;
+	height: 725px;
+	background-color: #87CEEB;
+	border-radius: 20px;
+	justify-content: center;
+    align-items: center;
+	display: flex;
+    position: relative;
+    left: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container{
+    position: relative;
+	height: 727px;
+	top: 1px;
+	width: 398px;
+	left: -529px;
+    border-radius: 20px 0 0 20px;
+    background-color: #31ffdb;
+    overflow: hidden;
+    
+}    
+
+.changed-container{
+	position: absolute;
+	display: inline-block;
+	justify-content: center;
+    align-items: center;
+	top: 0px;
+    left: 0px;
+}
+
+.nav-list li{
+    line-height: 3.5;
+}
+.nav-list a{
+	position: relative;
+	left: 49px;
+	margin-bottom:8px;
+	font-family:'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;	
+}
+
+
+#icon {
+  position: absolute;
+  left: 25px;
+  width: 55px;
+  height: 55px;
+  cursor:pointer;
+  margin-top: -138px;
+  transition: transform 0.3s ease-in-out; 
+}
+
+
+.menu-icon:hover{
+	transform: scale(1.2);
+}
+
+
+.nav-list {
+  list-style-type: none;
+  font-size: 18px;
+  display: none;
+  position: relative;
+  top: -189px;
+  width: 358px;
+  background-color: #ff3145 ;
+  border-radius: 20px 20px 0 20px;
+  margin-top: 106px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+.nav-list.visible{
+  list-style-type: none;
+  font-size: 18px;
+  display: none;
+  position: absolute;
+  top: 19px;
+  width: 358px;
+  background-color: #ff3145 ;
+  border-radius: 20px 20px 0 20px;
+  margin-top: 189px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+.hidden {
+  position: absolute;
+  left: 20px;
+  width: 45px;
+  height: 45px;
+  margin-top: -129px;
+  opacity: 0;
+  
+}
+
+#menu-toggle:checked + .nav + .nav-list {
+  display: block;
+}
+
+#menutexto{
+	font-family:'Montserrat', sans-serif;
+	color: white;
+	position: relative;
+	left: 79px;
+	top: -115px;
+}
+
+#imagem{
+	position: relative;
+	margin-top:5px;
+	left: 65px;
+	height: 179px;
+	width: 200px;
+}
+
+
+.icones{
+	position: relative;
+	right: 85px;
+}
+
+.icones:hover{
+	transform: scale(1.5);
+}
+
+#emotions{
+	position: relative;
+	right: 100px;
+	top: 10px;	
+}
+
+
+#game{
+	position: relative;
+	right: 75px;
+}
+
+#camera{
+	position: relative;
+	right: 73px;
+}
+
+
+li {
+  position: relative;
+  right: 39px;
+  border: 2px solid transparent;
+  transition: border-color 0.3s ease-in-out;
+  height: 41.15px;
+  width: 373px;
+  border-radius: 15.8px;
+  padding: 10px;
+  margin: 0;
+}
+
+li:hover {
+  border-color: white;
+}
+
+.sobre{
+	display: inline-block;
+	position: absolute;
+	left: 827px;
+	top: -45px;
+	background-color: #ffdb31;
+	border-radius: 10px;
+	height: 45px;
+}
+
+.sobre:hover{
+	transform: scale(1.2);
+}
+
+.menu-sobre:hover{
+	transform: scale(1.2);
+}
+
+.menu-sobre {
+	font-family:'Montserrat', sans-serif;
+	font-size: 20px;
+	position: relative;
+	top: 2px;
+    color: #db31ff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.card {
+	position: absolute;
+	right: 145px;
+	height: 595px;
+	width: 595px;
+    display: none;
+    margin-top: 30px;
+    padding:5px;
+    overflow: hidden;
+    border-radius: 25%;
+    border: 5px solid rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+ 
+}
+
+
+
+#toggleCard:checked + .menu-sobre + .card {
+    display: block;
+}
+
+
+.bgimage{
+	position: absolute;
+	right: -76px;
+	top: 65px;
+}
+
+
+.one-change-image{
+  top: 65px;
+  position: absolute;
+  right: -85px;
+
+}
+
+#back{
+	position: relative;
+	top: -65px;
+	right: 75px;
+	width: 146.5vh;
+	height: 727px;
+	border-radius: 0 20px 20px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+	
+}
+
+
+.links{
+	font-family:'Montserrat', sans-serif;
+	text-decoration: none;
+	color: white;
+	position: relative;
+	top: 450px;
+	margin: 9px;
+}
+
+#git{
+	left: 65px;
+	
+}
+
+#giticon{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 450px;
+	right: 25px;
+}
+
+#email{
+	left: 65px;
+}
+
+#gmicon{
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 415px;
+	left: 45px;
+}
+
+#cardimage{
+	position: relative;
+	right: 45px;
+	top: -25px;
+	width: 570px;
+	height: 495px;	
+}
+
+#video{
+	position:relative;
+	margin-top: 15px;
+	left: 15px;
+	border: 2px solid white;
+	border-radius: 25%;
+}
+
+.cloud {
+  width: 546px;
+  height: 80px;
+  background-color: #FFFFFF; 
+  border-radius: 70px 0 70px 0; /* Ajuste conforme necessário para a forma da nuvem */
+  position: absolute;
+  top: 710px;
+  left: 910px;
+  display: none;
+}
+
+.cloud.visible{
+	display: block;
+}
+
+#c1{
+  width: 570px;
+  height: 80px;
+  background-color: #FFFFFF; 
+  border-radius: 70px 0 70px 70px; /* Ajuste conforme necessário para a forma da nuvem */
+  position: absolute;
+  top: 790px;
+  left: 800px;
+  display: none;
+	
+}
+
+#c1.visible{
+	display: block;
+}
+
+#c2{
+  width: 546px;
+  height: 90px;
+  background-color: #FFFFFF; 
+  border-radius: 0 70px 70px 49px; /* Ajuste conforme necessário para a forma da nuvem */
+  position: absolute;
+  top: 718px;
+  left: 1px;
+  display: none;
+	
+}
+
+#c2.visible{
+	display: block;
+}
+
+#c3{
+  width: 476px;
+  height: 110px;
+  background-color: #FFFFFF; 
+  border-radius: 0 70px 70px 70px; 
+  position: absolute;
+  top: 798px;
+  left: 220px;
+  display: none;
+	
+}
+#c3.visible{
+	display: block;
+}
+
+#c4{
+  width: 326px;
+  height: 95px;
+  background-color: #FFFFFF; 
+  border-radius: 50px; 
+  position: absolute;
+  top: 970px;
+  left: 620px;
+  border-left: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-right:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+	
+}
+
+
+#c4.visible{
+	display: block;
+}
+
+#c5{
+  width: 149px;
+  height: 110px;
+  background-color: #FFFFFF; 
+  border-radius: 60px; 
+  position: absolute;
+  top: 890px;
+  left: 725px;
+  border-top: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-left: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-right:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+}
+
+#c5.visible{
+	display: block;
+}
+
+
+#c6{
+  width: 149px;
+  height: 110px;
+  background-color: #FFFFFF; 
+  border-radius: 60px; 
+  position: absolute;
+  top: 999px;
+  left: 665px;
+  border-top: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-left: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-right:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+}
+
+#c6.visible{
+	display: block;
+}
+
+
+#c7{
+  width: 200px;
+  height: 115px;
+  background-color: #FFFFFF; 
+  border-radius: 60px; 
+  position: absolute;
+  top: 1060px;
+  left: 300px;
+  border-top: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-left: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-right:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: none;
+}
+
+#c7.visible{
+	display: block;
+}
+
+
+.formulario {
+    width: 320px;
+    height: 370px;
+    position: absolute;
+    left: 450px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden; /* evita que o conteúdo dentro da div saia */
+}
+
+.cI {
+    width: 86%; /* Agora, a imagem ocupa toda a largura do container .formulario */
+    height: 75%;
+    position: relative;
+    left: 15px;
+    border-radius: 5px;
+    background-color: #eaeaea;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cN {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin: 0; /* Removendo a margem para evitar espaçamento indesejado */
+    padding: 10px; /* Adicionando padding para espaçamento interno */
+    border: none;
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+.swiper {
+    top: 270px;
+    width: 85%; /* Agora, a largura é 100% do pai */
+    height: 500px;
+    display: none;
+}
+
+.swiper.visible {
+    display: block;
+}
+
+.swiper-slide .modelo{
+	position: relative;
+	gap: 20px;
+}
+
+.emotionV{
+	position: relative;
+	top: 470px;
+	right: -100px;
+	display: none;
+}
+.v{
+	border-radius: 34px;
+	padding: 20px;
+}
+ 
+.emotionV.visible{
+	display: block;
+}
+
+
+#buttonMK{
+	position:absolute;
+	top: 830px;
+	right: 575px;
+	border:none;
+	display: none;
+	border-radius:10px;
+	width: 250px;
+	height: 65px;
+	background-color:#ffdb31;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+#buttonMK.visible{
+	display: block;
+}
+
+
+.game{
+	position: relative;
+	top: 350px;
+	right: 30px;
+	display: none;	
+}
+
+#fun{
+   border-radius: 34px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+}
+
+.game.visible{
+	border-radius: 34px;
+	display: block;
+}
+

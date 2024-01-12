@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="ISO-8859-1">
+<title>CADASTRO</title>
+<link rel="icon" href="public/images/TalkwCards/aba.png" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="public/styles/register.css">
+</head>
+
+<body>
+
+
+<div class="background">
+
+<div class="container">
+
+<div>
+<button type="submit" class="btn" id="entrar">Sing in</button>
+</div>
+
+<h1 id="titulo1">Create Account</h1>
+<h2 id="titulo2">enter your details</h2>
+
+<form id="form">
+
+<div class="mb-3">
+  <input type="text" value="" class="form-control" id="name"  required="required" placeholder="username" >
+</div>
+
+<div class="mb-3">
+  <input type="email" value="" class="form-control" oninput="validarEmail()" id="email"  required="required" placeholder="e-mail" >
+<small id="textemail" ></small>
+</div>
+
+<div class="mb-3">
+<input type="password" value="" id="password" oninput="validarSenha()" class="form-control" aria-describedby="passwordHelpBloc" placeholder="password" >
+<small id="senha"></small>
+    <br>
+    <input type="password" id="confirmPassword" name="confirmPassword" oninput="confirmarSenha()" class="form-control"  placeholder="Confirm Password" required="required">
+    <small id="senhaError"></small>
+    <br>
+</div>
+
+<div >
+<button type="reset" class="btn" onclick="salvarUsuario()"  id="botao">Sing up</button>
+</div>
+
+</form>
+</div>
+
+
+<div class="containericon">
+<div class="c1">
+ <img id="iconEmail" alt="" src="public/images/email.png" >
+</div>
+
+<div>
+  <img alt="" id="iconUser" src="public/images/user.png" >
+</div>
+
+<div>
+  <img alt="" id="iconSenha" src="public/images/password.png">
+</div>
+
+<div>
+  <img alt="" id="iconSenha2" src="public/images/password.png" >
+</div>
+</div>
+
+
+
+<div class="container2">
+<div class="container3">
+<h1 id="titulo3">Be Welcome !</h1>
+<h2 id="texto">enter your personal<br> details to use <br> all of site features </h2>
+</div>
+</div>
+
+<div class="containerimage">
+<img id="imagem" src="public/images/login.png">
+</div>
+
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<script defer="defer" type="text/javascript" src="public/scripts/register.js"></script>
+</body>
+</html>

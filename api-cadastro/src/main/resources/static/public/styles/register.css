@@ -1,0 +1,239 @@
+@charset "ISO-8859-1";
+
+body {
+    overflow: hidden;
+}
+
+.background{
+	width:160vh;
+	height: 700px;
+	background-color: white;
+	border-radius: 17px;
+	justify-content: center;
+    align-items: center;
+	display: flex;
+    position: relative;
+    left: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+    
+}
+
+.container{
+	padding-top: 50px;
+	position: relative;
+	width: 70vh;
+	height: 500px;
+	display: flex;
+    background-color: white;
+    flex-direction:column;   
+    align-items: center;
+	left: 650px;
+}
+
+
+.containericon{
+	position: relative;
+	height: 100px;
+	left: 455px;
+	flex-direction:column; 	
+	margin-top: 170px;
+	border: none;  
+	transform: translate(0, 125.8%);
+
+}
+
+
+#textemail{
+	position: relative;
+	left: 4px;
+	font-family: 'Montserrat', sans-serif;
+	color: #ff001a;
+}
+
+#senha{
+	position: relative;
+	left: 4px;
+	font-family: 'Montserrat', sans-serif;
+	color: #ff001a;
+}
+
+#senhaError{
+	position: relative;
+	left: 4px;
+	font-family: 'Montserrat', sans-serif;
+	color: #ff001a;
+}
+
+#titulo1{
+	font-family: 'Montserrat', sans-serif;
+	color: #48ffdf;
+	position: relative;
+	font-size: 30px;
+	right: 90px;
+}
+
+#titulo2{
+	margin: 4px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	position: relative;
+	right: 90px;
+	color: #939393;
+}
+
+
+.form-control{
+	border: none;
+	margin-top: 10px;
+	margin-right: 6px;
+	width: 340px;
+	height:36px;
+	border-radius: 9px;
+	background-color: #EFEFEF;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+::placeholder {
+  color: #939393;
+  position: relative;
+  left: 10px;
+}
+
+
+#botao{
+	margin-top: 25px;
+	border: none;
+	width: 135px;
+	height: 39px;
+	border-radius: 16px;
+	background-color: #FFE24B;
+	font-family:'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size:14px;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	left: 95px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+#entrar{
+	background-color: #45fec1;
+	border: none;
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	position: relative;
+	left: 180px;
+	bottom: 55px;
+	font-weight: bold;
+	font-size:14px;
+	color: white;
+	cursor: pointer;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
+}
+
+
+.container2{
+	position: relative;
+	height: 700px;
+	width: 700px;
+	right: 385px;
+    border-radius: 17px 0 0 17px;
+    background-color: #71FFE5;
+    margin-right: 26.5%;
+	
+}
+
+#titulo3{
+	margin-top: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size: 40px;
+	color: white;
+	position: relative;
+	left: 80px;
+	
+}
+#texto{
+	margin-top: 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight:bold;
+	font-size: 25px;
+	color: white;
+	position: relative;
+	left: 80px;
+}
+
+.containerimage{
+	height: 100px;
+	width:  100px;
+	position: relative;
+	right: 130vh;
+	
+}
+
+#imagem{
+	height: 412px;
+	width: 400px;
+}
+
+
+@keyframes upAndDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-5px); 
+  }
+}
+
+/*transform: translate(0, -795%);*/
+/*transform: translate(0, -540%);*/
+/*transform: translate(0, -628.9%);*/
+/*transform: translate(0, -993%);*/
+
+#iconUser{
+	position: relative;
+	right: 200px;
+	height:35px;
+	width: 35px;
+	top: -275px;
+	animation: upAndDown 2s infinite;
+}
+
+#iconEmail{
+	position: relative;
+	right: 200px;
+	height:35px;
+	width: 35px;
+	top: -184px;
+	animation: upAndDown 2s infinite;
+}
+
+#iconSenha{
+	position: relative;
+	right: 200px;
+	height:35px;
+	width: 35px;
+	top: -210px;
+	animation: upAndDown 2s infinite;
+}
+
+#iconSenha2{
+	position: relative;
+	right: 185px;	
+	height:20px;
+	width: 20px;
+	top: -193px;
+	animation: upAndDown 2s infinite;	
+}
+
+
+
+
+
