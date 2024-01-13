@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Login</title>
+<link rel="icon" href="public/images/TalkwCards/aba.png" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="public/styles/Login.css">
+</head>
+<body>
+
+<div class="background">
+
+<div class="container">
+
+<div class="containerText">
+<h1 id="titulo1">Login</h1>
+<h2 id="titulo2">Already have an account?</h2>
+<h3 id="titulo3">Login here.</h3>
+</div>
+
+
+<form id="form">
+
+<div class="mb-4">
+<div>
+<small id="textEmail"></small>
+</div>
+<input type="email"  class="form-control" id="email" oninput="validarEmail()" required="required" placeholder="e-mail">
+</div>
+
+<div>
+<input type="password"  class="form-control" id="password" oninput="validarSenha()" required="required"  placeholder="password" >
+</div>
+
+<div>
+<div>
+<small id="textSenha"></small>
+</div>
+<button type="submit" id="botao" onclick="singin()">Sing in</button>
+</div>
+</form>
+
+<div>
+<button type="button" id="voltar" onclick="voltar()"> <- back </button>
+</div>
+
+</div>
+
+
+<div class="containerIcon">
+
+<div>
+<img id="iconEmail" alt="" src="public/images/@.png" height="20" width="20">
+</div>
+
+<div>
+</div>
+<img id="iconchave" alt="" src="public/images/chave.png" height="20" width="20">
+</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script defer="defer" type="text/javascript" src="public/scripts/Login.js"></script>
+
+</body>
+</html>
